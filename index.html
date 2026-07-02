@@ -2,21 +2,116 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Data website</title>
         <link rel="stylesheet" href="style.css">
     </head>
         <body>
-            <div class="container">
-            <p class="top-text"> NO PRESSURE BUT...... SAY YES🥺</p>
+            <div class="container" id="page1" style ="display: block;">
+                <img src="3.png" style="display: block; width: 500px; align-content: center; margin-top: 0px; background-color: transparent;">
+            <p class="top-text"> NO PRESSURE BUT...... SAY YES🤪</p>
             <h1> Will you go on a date 
                <br> with me?</h1>
             <div class="buttons">
                 <button id ="yes-btn">YES💖</button>
                 <button id ="no">NO</button>
+            </div>
         </div>
-    </div>
+
+                <br>
+                <div id="page2" style="display: none;">
+                        <img src="4.png" style="width: 400px; align-content: center; margin-top: 0%; margin: auto;">
+                    <div class="card">
+                        <div class="header-icons"></div>
+                        <h2>when are you free..?
+                                🗓️🐾
+                        </h2>
+                        <form>
+                            <div class="input-group">
+                            <label for="date-picker">Pic a day🗓️</label>
+                            <input type="date" id="date-picker" value="2026-06-05">
+                            </div>
+                            <div class="input-group"> 
+                            <label for="time-picker">What time?⏰</label>
+                            <select id="time-picker">
+                            <option value=""disabled selected> select a time....</option>
+                            <option value="12:00">12:00pm</option>
+                            <option value="14:00">2:00pm</option>
+                            <option value="18:00">6:00pm</option>
+                            <option value="20:00">8:00pm</option>
+                            </select>
+                            </div>
+                            <div type="buttons">
+                           <button id="submit-btn" type="button">Set the date!💖</button>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    <br><br>                    
+                    <div id="page3" class="page3" style="display: none;">
+                        <img src="5.png" class="page3-image" alt="Celebrate">
+                        <br>
+                        <div class="card page3-card">
+                            <div class="page3-content">
+                                <h2>So.. what do you like to eat pick your favorite 💖</h2>
+                                <div class="middle-space" aria-hidden="true"></div>
+                                <div class="image-picker" id="image-picker">
+                                    <div class="image-card">
+                                        <button class="image-option active" type="button" data-image="3.png" aria-label="Select Bubble Tea">
+                                            <img src="bubbletea.png" alt="Bubble Tea">
+                                        </button>
+                                        <span class="option-name">Bubble Tea</span>
+                                    </div>
+                                    <div class="image-card">
+                                        <button class="image-option" type="button" data-image="4.png" aria-label="Select KFC">
+                                            <img src="kfc.png" alt="KFC">
+                                        </button>
+                                        <span class="option-name">KFC</span>
+                                    </div>
+                                    <div class="image-card">
+                                        <button class="image-option" type="button" data-image="5.png" aria-label="Select McDonald's">
+                                            <img src="mcdonalds.png" alt="McDonald's">
+                                        </button>
+                                        <span class="option-name">McDonald's</span>
+                                    </div>
+                                    <div class="image-card">
+                                        <button class="image-option" type="button" data-image="3.png" aria-label="Select Momo">
+                                            <img src="momo.png" alt="Momo">
+                                        </button>
+                                        <span class="option-name">Momo</span>
+                                    </div>
+                                    <div class="image-card">
+                                        <button class="image-option" type="button" data-image="4.png" aria-label="Select Ramen">
+                                            <img src="ramen.png" alt="Ramen">
+                                        </button>
+                                        <span class="option-name">Ramen</span>
+                                    </div>
+                                    <div class="image-card">
+                                        <button class="image-option" type="button" data-image="5.png" aria-label="Select Pizza">
+                                            <img src="pizza.png" alt="Pizza">
+                                        </button>
+                                        <span class="option-name">Pizza</span>
+                                    </div>
+                                    <br>
+                                    <div class="page3-actions">
+                                        <button id="page3-submit-btn" type="button">Confirm💖</button>
+                                    </div>
+                        </div>
+                    </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+emailjs.init({
+
+    publicKey: "z2qhNYsR6w0rSuOlY",
+
+});
+
+</script>
+
+
 
 </body>
 </html>
